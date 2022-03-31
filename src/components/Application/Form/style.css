@@ -27,9 +27,7 @@ h3 {
 }
 
 
-.homeForm>input:focus {
-    outline: none
-}
+
 
 .homeForm>input::placeholder{
     color: #868E96;
@@ -93,6 +91,7 @@ h3 {
     border-radius: 8px;
     background-color:  #F8F9FA;
     color: #868E96;
+    cursor: pointer;
 }
 
 .tipo>select:focus {

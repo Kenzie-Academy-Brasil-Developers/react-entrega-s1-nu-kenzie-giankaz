@@ -1,0 +1,10 @@
+.empty {
+    text-align: start;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.emptyImg {
+    width: 550px;
+    height: auto;
+}

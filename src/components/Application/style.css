@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
 .homeHeader {
     height: 10vh;
     min-height: 50px;
@@ -21,6 +23,8 @@
     width: 80%;
     margin: 0 auto;
     min-height: 60vh;
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif; 
 }
 
 
@@ -30,3 +34,70 @@
     height: 350px;
     gap: 10px;
 }
+
+.listHeader {
+    width: 45vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.listHeader>p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.filter {
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #E9ECEF;
+    color: #868E96;
+}
+.filter:hover {
+    color: rgba(233, 236, 239, 1);
+    background-color: rgba(134, 142, 150, 1);
+}
+.btnTodos {
+    background-color:#FD377E;
+    color: white;
+}
+
+.btnTodos:hover {
+    background-color: #ce2764;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: scroll;
+    width: 46vw;
+    height: 60vh;
+    scrollbar-width: auto;
+    scrollbar-color: #bcb7bd #ffffff;
+    gap: 10px;
+    padding: 0;
+  }
+
+
+  ul::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+
+  ul::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+
+  ul::-webkit-scrollbar-thumb {
+    background-color: #bcb7bd;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  
+}
+

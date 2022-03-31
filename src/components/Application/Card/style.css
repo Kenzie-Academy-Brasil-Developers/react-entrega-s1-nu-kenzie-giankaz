@@ -1,0 +1,44 @@
+.card {
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgba(248, 249, 250, 1);
+    border-radius: 4px;
+    border-left: 4px solid rgba(3, 184, 152, 1);
+}
+.card>.info {
+    text-align: start;
+}
+.card>.info>.infoDes {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(33, 37, 41, 1);
+}
+
+.card>.totalDel {
+    width: 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: rgba(33, 37, 41, 1);
+    font-weight: bold;
+}
+.card>.totalDel>button {
+    border: none;
+    background-color: transparent;
+    height: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card>.totalDel>button>img {
+    width: 15px;
+    height: auto;
+}
+
+.card>.totalDel>button:hover {
+    background-color: rgb(229, 231, 233);
+}

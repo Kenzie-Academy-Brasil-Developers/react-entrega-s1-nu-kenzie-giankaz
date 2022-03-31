@@ -2,7 +2,7 @@
 
 .homeForm {
     width: 363px;
-    height: 351px;
+    height: 300px;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -116,7 +116,7 @@ h3 {
     background-color: #FD377E;
     border: none;
     width: 100%;
-   border-radius: 8px;
+    border-radius: 8px;
     padding: 20px;
     font-size: 16px;
     color: white;
@@ -125,4 +125,23 @@ h3 {
 .homeForm>.formSubmit:hover {
     background-color: #ce2764;
 
+}
+@media screen and (max-width: 768px)  {
+
+    .homeForm {
+        width: 95vw;
+        padding: 0;
+        margin: 0 5px;
+        align-items:center;
+    }
+    .homeForm>input{
+        width: 90%;
+    }
+    .homeForm>.holder {
+        width: 90%;
+    }
+
+    .homeForm>.formSubmit {
+        max-width: 200px;
+    }
 }

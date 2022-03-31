@@ -1,0 +1,30 @@
+.homeHeader {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20%;
+    background: #F8F9FA;
+    border-bottom: 1px groove rgba(0, 0, 0, 0.084);
+    margin-bottom: 25px;
+
+
+}
+
+.homeMain {
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 350px;
+    gap: 10px;
+}

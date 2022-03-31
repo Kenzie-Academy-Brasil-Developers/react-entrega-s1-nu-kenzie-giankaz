@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+.homeForm {
+    width: 363px;
+    height: 351px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid rgba(233, 236, 239, 1);
+    border-radius: 4px;
+    padding: 40px 20px;
+    gap: 5px
+}
+
+h3 {
+    font-size: 12px;
+    color: #212529;
+
+}
+.homeForm>input {
+    background: #F8F9FA;
+    width: 314px;
+    padding: 20px 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.homeForm>input:focus {
+    outline: none
+}
+
+.homeForm>input::placeholder{
+    color: #868E96;
+}
+
+.homeForm>span {
+    font-size: 12px;
+    color: rgba(134, 142, 150, 1);
+}
+.homeForm>.holder {
+    text-align: start;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.valor {
+    position: relative;
+    width: 128px;
+    margin-bottom: 10px;
+}
+
+.valor>input {
+    background-color: #F8F9FA;
+    border: none;
+    padding: 15px;
+    width: 65%;
+    border-radius: 8px;
+}
+.valor>input:focus {
+    outline: none
+}
+.valor>input::-webkit-outer-spin-button,
+.valor>input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.valor>input[type=number] {
+  -moz-appearance: textfield;
+}
+.valor>input::placeholder {
+    color: #868E96;
+}
+.valor>label {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #F8F9FA;
+    padding: 12.5px;
+    border-radius: 8px;
+    color: #868E96;
+    font-weight: bold;
+}
+
+.tipo>select {
+    border: none;
+    padding: 15px;
+    width: 150px;
+    border-radius: 8px;
+    background-color:  #F8F9FA;
+    color: #868E96;
+}
+
+.tipo>select:focus {
+    outline: none
+}
+
+
+.tipo>select>option {
+    background-color:  #F8F9FA;
+}
+
+.tipo>select>.entrada {
+    color: green;
+}
+
+.tipo>select>.saida {
+    color: red;
+}
+
+
+.homeForm>.formSubmit {
+    background-color: #FD377E;
+    border: none;
+    width: 100%;
+   border-radius: 8px;
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.homeForm>.formSubmit:hover {
+    background-color: #ce2764;
+
+}

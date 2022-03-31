@@ -2,9 +2,11 @@
     text-align: start;
     font-size: 18px;
     margin: 0 0 5px 0;
+    color: rgba(134, 142, 150, 1);
+    font-weight: bold;
 }
 
 .emptyImg {
-    width: 550px;
+    width: 500px;
     height: auto;
 }

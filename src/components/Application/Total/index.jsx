@@ -5,7 +5,7 @@ export default function Total () {
     return (
         <>
         <div className="totalDiv">
-            <div className="valor">
+            <div className="valorTotal">
                 <h3>Valor Total:</h3>
                 <span>O valor se refere as entradas</span>
             </div>

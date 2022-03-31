@@ -2,6 +2,8 @@
 .homeLogo {
     max-width: 150px;
     height: auto;
+    position: absolute;
+    left: 10%;
 }
 
 .logout {
@@ -12,6 +14,8 @@
     background-color:rgba(233, 236, 239, 1);
     color: rgba(134, 142, 150, 1);
     cursor: pointer;
+    position: absolute;
+    right: 10%;
 }
 
 .logout:hover {

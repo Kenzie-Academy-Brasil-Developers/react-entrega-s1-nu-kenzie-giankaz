@@ -69,7 +69,7 @@ export default function Application ({setStarted}) {
                 <div className="listHeader">
                     <p>Resumo Financeiro</p>
                     <div className="filters">
-                        <button className="filter btnTodos"  onClick={filterTodos}>Todos</button>
+                        <button className="filter btnTodos" autoFocus onClick={filterTodos}>Todos</button>
                         <button className="filter btnEntrada" onClick={filterEntrada}>Entrada</button>
                         <button className="filter btnDespesa" onClick={filterDespesa}>Despesas</button>
                     </div>

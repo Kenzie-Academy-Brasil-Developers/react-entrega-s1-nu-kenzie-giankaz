@@ -10,7 +10,7 @@ export default function Total ({total}) {
                 <h3>Valor Total:</h3>
                 <span>O valor se refere as entradas</span>
             </div>
-            <p>R$ <span className="valorTotal">{total}</span></p>
+            <p>R$<span className="valorTotal">{total}</span></p>
         </div>
         </>
     )

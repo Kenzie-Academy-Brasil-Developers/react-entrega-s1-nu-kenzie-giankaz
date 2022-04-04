@@ -1,5 +1,7 @@
 import './style.css'
+import Modal from '../Modal'
 import {useState} from 'react'
+
 
 
 
@@ -9,16 +11,31 @@ export default function Form ({setHave, setList, list, setTotal, total, setCopy}
     const [value, setValue] = useState('')
     const [type, setType] = useState('Entrada')
     const [counter, setCounter] = useState(0)
+    const [modal, setModal] = useState(false)
+    const [msg, setMsg] = useState('')
+
 
 
     const handleList = () => {
-        setList([...list, {description: description, value: value, type: type, id: counter}])
-        setCopy([...list, {description: description, value: value, type: type, id: counter}])
-
-        type === 'Entrada' ? setTotal(total + Number(value)) : setTotal(total - Number(value))
-        setCounter(counter + 1)
-        setDescription('')
-        setValue('')
+        if (description === '') {
+            setModal(true)
+            setMsg('Digite uma descrição!')
+        } else if (value === '') {
+            setModal(true)
+           setMsg('Digite um valor!') 
+        } else if(value < 0) {
+            setModal(true)
+            setMsg('Digite um valor maior que 0!')
+        }else {
+            setList([...list, {description: description, value: value, type: type, id: counter}])
+            setCopy([...list, {description: description, value: value, type: type, id: counter}])
+            setHave(true)
+    
+            type === 'Entrada' ? setTotal(total + Number(value)) : setTotal(total - Number(value))
+            setCounter(counter + 1)
+            setDescription('')
+            setValue('')
+        }
     }
 
     return (
@@ -43,8 +60,8 @@ export default function Form ({setHave, setList, list, setTotal, total, setCopy}
           </div>
           <button type="submit" className="formSubmit" onClick={() => {
               handleList()
-              setHave(true)
               }}>Inserir Valor</button>
+             {modal && <Modal msg={msg} setModal={setModal}/>}
         </form>
     )
 }

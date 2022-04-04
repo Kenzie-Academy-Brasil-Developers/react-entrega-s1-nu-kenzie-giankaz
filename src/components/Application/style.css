@@ -25,6 +25,7 @@
     min-height: 60vh;
     justify-content: space-around;
     font-family: 'Nunito', sans-serif; 
+    gap: 10px;
 }
 
 
@@ -149,7 +150,7 @@ ul>.out {
     border-left: 4px solid rgba(233, 236, 239, 1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     html {
         overflow-x: hidden;
     }
@@ -187,11 +188,11 @@ ul>.out {
         width: 90%;
     }
     .listHeader {
-        width: 70vw;
+        width: 90%;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .listHeader>.filters {

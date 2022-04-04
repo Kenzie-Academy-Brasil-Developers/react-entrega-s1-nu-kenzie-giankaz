@@ -20,7 +20,7 @@ h3 {
 }
 .homeForm>input {
     background: #F8F9FA;
-    width: 314px;
+    width: 90%;
     padding: 20px 16px;
     border: none;
     border-radius: 8px;
@@ -32,6 +32,7 @@ h3 {
 .homeForm>input::placeholder{
     color: #868E96;
 }
+
 
 .homeForm>span {
     font-size: 12px;
@@ -126,7 +127,7 @@ h3 {
     background-color: #ce2764;
 
 }
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 900px)  {
 
     .homeForm {
         width: 95vw;
@@ -135,7 +136,7 @@ h3 {
         align-items:center;
     }
     .homeForm>input{
-        width: 90%;
+        width: 80%;
     }
     .homeForm>.holder {
         width: 90%;

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.modalDiv {
+    background-color: #FD377E;
+    margin: 15% auto;
+    padding: 20px;
+    width: 324px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+
+.modalDiv>button {
+    border: none ;
+    width: 50px;
+    height: 40px;
+    border-radius: 8px;
+    color: #868E96;
+    border: 2px solid #63676c;
+    cursor: pointer;
+
+}
+.modalDiv>button:hover {
+    color: #63676c;
+    border: 2px solid #868E96;
+}
+.modalDiv>p {
+    font-size: 16px;
+    color: white;
+
+}

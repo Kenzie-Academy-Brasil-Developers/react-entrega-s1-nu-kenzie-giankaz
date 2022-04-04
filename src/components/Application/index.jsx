@@ -36,7 +36,9 @@ export default function Application ({setStarted}) {
 
         if (newList.length === 0) {
             setHave(false)
-        } 
+        }  else {
+            setHave(true)
+        }
     }
     const filterDespesa = () => {
         const newList = list.filter((value) => {
@@ -47,6 +49,8 @@ export default function Application ({setStarted}) {
 
         if (newList.length === 0) {
             setHave(false)
+        } else {
+            setHave(true)
         }
     }
 
@@ -63,6 +67,7 @@ export default function Application ({setStarted}) {
                 <section className="form">
                     <Form setHave={setHave}setList={setList} list={list} setTotal={setTotal} total={total} setCopy={setCopy}/>
                    {have && <Total total={total}/>}
+                 
                 </section>  
 
                 <section className="listSection">
